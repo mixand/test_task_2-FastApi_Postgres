@@ -1,0 +1,8 @@
+FROM python:3.9.16
+ENV TZ="Europe/Minsk"
+RUN apt update -y && apt install ffmpeg -y
+
+WORKDIR /home/user/app/
+COPY ./requirements.txt ./requirements.txt
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
