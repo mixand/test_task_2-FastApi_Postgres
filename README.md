@@ -36,10 +36,13 @@
 1. Желательно, если при выполнении задания вы будете использовать docker-compose, SQLAlchemy, пользоваться аннотацией
    типов.
 
-### Launch Instructions:
+### Launch Instructions for Linux:
+All settings are in the [.env](./.env) file.
 
 In the terminal panel, run the following commands:
 
 ```
-$ sudo docker-compose up --build
+$ mkdir dbdata static && sudo docker-compose up --build
 ```
+
+Examples of queries in the postman collection [test_2.postman_collection.json](./test_2.postman_collection.json).

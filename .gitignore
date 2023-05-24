@@ -24,3 +24,5 @@ api/static/
 .test/
 venv
 logs
+dbdata
+static
